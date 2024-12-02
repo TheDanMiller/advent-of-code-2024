@@ -1,0 +1,17 @@
+*.txt
+# Python Byte-compiled files
+__pycache__/
+*.py[cod]
+*.class
+# Virtual Environments
+venv/
+ENV/
+env/
+# Distribution files
+dist/
+build/
+*.egg-info/
+# PyCharm
+.idea/
+*.log
+

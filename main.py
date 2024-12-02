@@ -9,7 +9,7 @@ import days.day01.solution
 def solve():
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, from solve function')  # Press ⌘F8 to toggle the breakpoint.
-    # days.day01.solution.solve_part_one(False)
+    days.day01.solution.solve_part_one(False)
     days.day01.solution.solve_part_two(False)
 
 
