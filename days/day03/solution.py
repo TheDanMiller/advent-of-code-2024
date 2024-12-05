@@ -3,9 +3,6 @@ import re
 
 
 def solve(use_sample: bool):
-    print("Hello from solution, day #3")
-    print("One of these days I should remove this print statement")
-    print("but for now its awesome")
 
     # Resolve path relative to this script's directory
     if use_sample:
@@ -14,18 +11,17 @@ def solve(use_sample: bool):
         puzzle_input = find_relative_path('input.txt', __file__)
 
     corrupted_memory = list(read_file(puzzle_input))  # Read file lines into a list
+    corrupted_line = " ".join(corrupted_memory)
     regex = r"mul\((\d+),(\d+)\)"
 
     # Process each line
-    all_matches = []
-    for line in corrupted_memory:
-        matches = re.findall(regex, line)
-        all_matches.extend(matches)
+    all_matches = re.findall(regex, corrupted_line)
 
     # Print all matches found
     sum = 0
-    for match in matches:
-        sum += int(match[0]) * int(match[1])
+    for match in all_matches:
+        delta = int(match[0]) * int(match[1])
+        sum += delta
 
     print (f"The sum of the multiplied instructions is: {sum}")
     # Regex to find matching patterns mul(int, int)
