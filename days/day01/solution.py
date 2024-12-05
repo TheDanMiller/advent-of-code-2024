@@ -39,7 +39,7 @@ def solve_part_two(use_sample: bool):
     if use_sample:
         puzzle_input = find_relative_path('sample.txt', __file__)
     else:
-        puzzle_input = find_relative_path('part1.txt', __file__)
+        puzzle_input = find_relative_path('input.txt', __file__)
 
     first_digit, second_digit, score = [], {}, 0
     # Read and process the file
