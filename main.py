@@ -2,6 +2,7 @@
 import days.day01.solution
 import days.day02.solution
 import days.day03.solution
+import days.day04.solution
 
 
 # Press ⌃R to execute it or replace it with your code.
@@ -11,7 +12,7 @@ import days.day03.solution
 def solve():
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, from solve function')  # Press ⌘F8 to toggle the breakpoint.
-    days.day03.solution.solve(False)
+    days.day04.solution.solve(True)
 
 
 # Press the green button in the gutter to run the script.
