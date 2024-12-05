@@ -12,7 +12,7 @@ def solve():
     print(f'Hi, from solve function')  # Press ⌘F8 to toggle the breakpoint.
     #days.day01.solution.solve_part_one(False)
     #days.day01.solution.solve_part_two(False)
-    days.day02.solution.solve(True)
+    days.day02.solution.solve(False)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
